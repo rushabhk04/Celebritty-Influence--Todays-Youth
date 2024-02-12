@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparative Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: rgb(34,193,195);
+            background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(2,29,75,1) 100%);
+        }
+        .main-page {
+            text-align: center;
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #555;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #plotContainer {
+            margin-top: 3%;
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-page">
+        <h1>Let's compare the number of posts received in the Reddit and YouTube</h1>
+        <p>We are comparing the number of posts received in Reddit and YouTube from different kinds of celebrities. Provide a date to analyze.</p>
+        <form id="dateForm">
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required><br><br>
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" required><br><br>
+            <button type="submit">Generate Plot</button>
+        </form>
+    </div>
+
+    <div id="plotContainer"></div>
+
+    <script>
+        document.getElementById('dateForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const startDateInput = document.getElementById('startDate');
+            const endDateInput = document.getElementById('endDate');
+            const startDate = startDateInput.value;
+            const endDate = endDateInput.value;
+
+            // Basic checks
+            if (!startDate || !endDate) {
+                alert('Please enter both start date and end date.');
+                return;
+            }
+
+            if (startDate === endDate) {
+                alert('Start date and end date cannot be the same.');
+                return;
+            }
+
+            if (new Date(endDate) < new Date(startDate)) {
+                alert('End date cannot be less than start date.');
+                return;
+            }
+
+            fetch(`/generatePlot?start_date=${startDate}&end_date=${endDate}`)
+                .then(response => response.json())
+                .then(data => {
+                    const img = document.createElement('img');
+                    img.src = data.plot_path;
+                    document.getElementById('plotContainer').innerHTML = ''; // Clear previous content
+                    document.getElementById('plotContainer').appendChild(img);
+                });
+        });
+    </script>
+</body>
+</html>

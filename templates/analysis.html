@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Page</title>
+</head>
+
+<body>
+    <h1>Analysis Results</h1>
+    
+    <h2>Toxicity in Music</h2>
+    <img src="{{ url_for('static', filename='plots/sentimentPlots/toxicityInMusic.png') }}" alt="Toxicity in Music">
+
+    <h2>Toxicity in Sports</h2>
+    <img src="{{ url_for('static', filename='plots/sentimentPlots/toxicityInSports.png') }}" alt="Toxicity in Sports">
+
+    <h2>Toxicity in TV</h2>
+    <img src="{{ url_for('static', filename='plots/sentimentPlots/toxicityInTV.png') }}" alt="Toxicity in TV">
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plot Gallery</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e0e0e0 url('background.jpg') repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            background-color: #333333;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .plot-container {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 30px auto;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .plot-container:hover {
+            transform: scale(1.02);
+        }
+
+        .plot-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px;
+            color: #004080;
+        }
+
+        .plot-description {
+            font-size: 18px;
+            margin: 0 20px 20px;
+            color: #555;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Plot Gallery</h1>
+
+<div class="plot-container">
+    <div class="plot-title">Plot 1: Dates wise posts record</div>
+    <img src="../static/plots/comparativePlots/date.png" alt="Plot 1">
+    <div class="plot-description">This plot is about the user engagement for celebrities in reddit. Out of which Reddit posts were increased significantly.</div>
+</div>
+
+<div class="plot-container">
+    <div class="plot-title">Plot 2: Two Celebrities comparison - YouTube and Reddit</div>
+    <img src="../static/plots/influencePlots/influ.png" alt="Plot 2">
+    <div class="plot-description">This is a plot for two celebrities Selena Gomez and Kendal Jenner. Out of which Kendal jenner wins on youtube and Selena wins in Reddit.</div>
+    
+    <img src="{{ url_for('static', filename='images/RedditCelebrityInfluence.png') }}" alt="Image 1">
+    <img src="{{ url_for('static', filename='images/YouTubeCelebrityInfluence.png') }}" alt="Image 2">
+    <img src="{{ url_for('static', filename='images/EngagementDataReddit.png') }}" alt="Image 3">
+    <img src="{{ url_for('static', filename='images/EngagementDataYouTube.png') }}" alt="Image 4">
+    <img src="{{ url_for('static', filename='images/RedditCelebrityInfluence.png') }}" alt="Image 5">
+    <img src="{{ url_for('static', filename='images/SentimentalTables.png') }}" alt="Image 1">
+
+
+</div>
+
+<div class="plot-container">
+    <div class="plot-title">Plot 3: Toxicity in Music - YouTube and Reddit</div>
+    <img src="../static/plots/sentimentPlots/toxicityInMusic.png" alt="Plot 3">
+    <div class="plot-description">This is a plot that takes music celebritiesin account and shows which one of them were discussed most over public with most toxicity in Reddit and YouTube.</div>
+</div>
+<div class="plot-container">
+    <div class="plot-title">Plot 4: Toxicity in Sports - YouTube and Reddit</div>
+    <img src="../static/plots/sentimentPlots/toxicityInSports.png" alt="Plot 4">
+    <div class="plot-description">This is a plot that takes sports celebrities in account and shows which one of them were discussed most over public with most toxicity in Reddit and YouTube.</div>
+</div>
+<div class="plot-container">
+    <div class="plot-title">Plot 5: Toxicity in TV - YouTube and Reddit</div>
+    <img src="../static/plots/sentimentPlots/toxicityInTV.png" alt="Plot 5">
+    <div class="plot-description">This is a plot that takes tv celebrities in account and shows which one of them were discussed most over public with most toxicity in Reddit and YouTube.</div>
+</div>
+<div class="plot-container">
+    <div class="plot-title">Plot 6: Toxicity Scores- YouTube and Reddit</div>
+    <img src="{{ url_for('static', filename='images/ToxicityScores.png') }}" alt="Image 1">
+    <div class="plot-description">This is a plot that shows the overall Toxicity Score between Reddit and YouTube.</div>
+</div>
+<div class="plot-container">
+    <div class="plot-title">Plot 7: CDF Daily Views- YouTube and Reddit</div>
+    <img src="{{ url_for('static', filename='images/CDFDailyViewCount.png') }}" alt="Image 1">
+    <div class="plot-description">This is a plot that shows the overall CDF of the daily view count between Reddit and YouTube.</div>
+</div>
+
+</body>
+</html>
