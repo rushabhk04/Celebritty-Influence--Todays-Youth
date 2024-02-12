@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #f2f2f2;
+        }
+        #pdfContainer {
+            width: 80%;
+            height: 80vh;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Report</h1>
+    
+    <div id="pdfContainer">
+        <embed src="{{ url_for('static', filename='images/Project3ImplementationReportAnalyzingTheInfluenceofCelebritiesOnToday’sGeneration.pdf') }}" type="application/pdf" width="100%" height="100%">
+    </div>
+</body>
+</html>
