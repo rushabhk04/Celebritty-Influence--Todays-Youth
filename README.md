@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ## Project Abstract
 
 In the digital age, understanding celebrity influence on today's generation is crucial. This project explores this phenomenon using the YouTube Data API and Reddit to collect and analyze data for meaningful insights. The objective is to collect real-time data and analyze and derive meaningful insights from the celebrity-based data, their online presence, and their impact on today’s generation. This entails scrutinizing the nature of discussions surrounding celebrities, discerning whether they predominantly manifest in a positive or negative light. By navigating the intricate interplay between celebrities and their admirers, we aim to shed light on the profound ways in which these figures shape beliefs, behaviors, and preferences within today's digital age. 
@@ -6,22 +6,20 @@ In the digital age, understanding celebrity influence on today's generation is c
 ## Team
 
 =======
-## Peroject 2 Implementation:-
+## Project 2 Implementation:-
 
 ## Project Abstract
 In the digital era, the impact of celebrities on the younger generation is increasingly mediated through social media platforms. This study aims to quantitatively and qualitatively analyze the extent and nature of this influence. Utilizing the APIs of two major social media platforms, YouTube and Reddit, we systematically gather a substantial dataset, which is then meticulously stored in a MongoDB database for robust analysis. Our methodology encompasses a multi-faceted analytical approach, including an Influence Matrix, Trends Analysis, Content Analysis, and Sentiment Analysis, to provide a comprehensive understanding of celebrity impact.
 
 ## Team
->>>>>>> 95c68c29e4eb17fb53c9c14f97d8469f0b1152f8
 Bhavit Yogesh Shah bshah5@binghamton.edu
 Rushabh Kothari rkothar1@binghamton.edu
 Shruti Iyengar siyenga1@binghamton.edu
 Mukul Dev mchhang1@binghamton.edu
 
-<<<<<<< HEAD
+
 
 =======
->>>>>>> 95c68c29e4eb17fb53c9c14f97d8469f0b1152f8
 ## Tech-stack
 
 * `python` - The project is developed and tested using python v3.8. [Python Website](https://www.python.org/)
@@ -30,7 +28,6 @@ Mukul Dev mchhang1@binghamton.edu
 * `Json` - Json is python build in package used to work on JSON data got from different API get request[Python documentation Website](https://docs.python.org/3/library/datetime.html)
 * `base64` - base64 is python library used for data encoding [Python documentation Website](https://docs.python.org/3/library/datetime.html)
 * `MongoDB` - MongoDB is NoSQL document database used to store data collected from Reddit and YouTube websites [MongoDB Website]( https://www.mongodb.com/)
-<<<<<<< HEAD
 * `PyMongo` - PyMongo is Python distribution containing tool used to work with MongoDB using Python [PyMongo Website]
 ( https://pymongo.readthedocs.io/en/stable/)
 
@@ -304,7 +301,6 @@ pip install -r requirements.txt
     **NOTE: For  data that was to be collected between 1st and 14th. Due to vm problems there is no data on 5th and 6th and some inconsistencies that we had spoken to the professor in class. 
 
     Other than that we had run the project several times after the vm was restored for testing purposes and that's why you may see a spike on that date. Also, on 17th a spike is seen as after our first demo we were advised to do some changes in scheduling and we tested the same again. 
-<<<<<<< HEAD
 
 
 In this part of the project we have developed an interactive tool including various analysis based on the data that was collected. All the HMTL files should be under templates folder
@@ -384,4 +380,3 @@ pip install -r req.txt
     
     In our MongoDB database, we have have collected data from 3rd November to 27th November for the toxicity and sentiment based data.All plots will be stored under static/plots directory. We have run each kind of plot once and stored it just in case. Also, the images that will be used in our website, are also stored under path static/images. 
 =======
->>>>>>> 95c68c29e4eb17fb53c9c14f97d8469f0b1152f8
