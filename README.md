@@ -8,8 +8,6 @@ In the digital age, understanding celebrity influence on today's generation is c
 
 ## Project Implementation:-
 
-## Project Abstract
-In the digital era, the impact of celebrities on the younger generation is increasingly mediated through social media platforms. This study aims to quantitatively and qualitatively analyze the extent and nature of this influence. Utilizing the APIs of two major social media platforms, YouTube and Reddit, we systematically gather a substantial dataset, which is then meticulously stored in a MongoDB database for robust analysis. Our methodology encompasses a multi-faceted analytical approach, including an Influence Matrix, Trends Analysis, Content Analysis, and Sentiment Analysis, to provide a comprehensive understanding of celebrity impact.
 
 ## Team
 
@@ -301,7 +299,7 @@ pip install -r requirements.txt
     
     python3 trends.py
 
-    For running a plot that shows comparison between Reddit and youtube in toxicity using --modern hate speech:-
+    For running a plot that shows a comparison between Reddit and YouTube in toxicity using --modern hate speech:-
     python3 mhs-plots.py
    
     --for generating politics comments binned hourly 
@@ -384,7 +382,7 @@ pip install -r req.txt
     http://127.0.0.1:5000/sentiment_analysis
 
 
-    For running all the plots that show a comparison between Reddit and Youtube:-
+    For running all the plots that show a comparison between Reddit and YouTube:-
 
     4) General Plots
 
