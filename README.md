@@ -3,10 +3,7 @@
 
 In the digital age, understanding celebrity influence on today's generation is crucial. This project explores this phenomenon using the YouTube Data API and Reddit to collect and analyze data for meaningful insights. The objective is to collect real-time data and analyze and derive meaningful insights from the celebrity-based data, their online presence, and their impact on today’s generation. This entails scrutinizing the nature of discussions surrounding celebrities, discerning whether they predominantly manifest in a positive or negative light. By navigating the intricate interplay between celebrities and their admirers, we aim to shed light on the profound ways in which these figures shape beliefs, behaviors, and preferences within today's digital age. 
 
-## Team
-
-=======
-## Project 2 Implementation:-
+## Project Implementation:-
 
 ## Project Abstract
 In the digital era, the impact of celebrities on the younger generation is increasingly mediated through social media platforms. This study aims to quantitatively and qualitatively analyze the extent and nature of this influence. Utilizing the APIs of two major social media platforms, YouTube and Reddit, we systematically gather a substantial dataset, which is then meticulously stored in a MongoDB database for robust analysis. Our methodology encompasses a multi-faceted analytical approach, including an Influence Matrix, Trends Analysis, Content Analysis, and Sentiment Analysis, to provide a comprehensive understanding of celebrity impact.
@@ -17,18 +14,16 @@ Rushabh Kothari rkothar1@binghamton.edu
 Shruti Iyengar siyenga1@binghamton.edu
 Mukul Dev mchhang1@binghamton.edu
 
-
-
 =======
 ## Tech-stack
 
-* `python` - The project is developed and tested using python v3.8. [Python Website](https://www.python.org/)
+* `Python` - The project is developed and tested using Python v3.8. [Python Website](https://www.python.org/)
 * `request` - Request is a popular HTTP networking module(aka library) for python programming language. [Request Website](https://docs.python-requests.org/en/latest/#)
-* `datetime` - The datetime library used for manipulating dates and times [Python documentation Website]( https://docs.python.org/3/library/datetime.html)
-* `Json` - Json is python build in package used to work on JSON data got from different API get request[Python documentation Website](https://docs.python.org/3/library/datetime.html)
-* `base64` - base64 is python library used for data encoding [Python documentation Website](https://docs.python.org/3/library/datetime.html)
-* `MongoDB` - MongoDB is NoSQL document database used to store data collected from Reddit and YouTube websites [MongoDB Website]( https://www.mongodb.com/)
-* `PyMongo` - PyMongo is Python distribution containing tool used to work with MongoDB using Python [PyMongo Website]
+* `datetime` - The DateTime library used for manipulating dates and times [Python documentation Website]( https://docs.python.org/3/library/datetime.html)
+* `Json` - Json is a Python build package used to work on JSON data got from different API get requests [Python documentation Website](https://docs.python.org/3/library/datetime.html)
+* `base64` - base64 is a Python library used for data encoding [Python documentation Website](https://docs.python.org/3/library/datetime.html)
+* `MongoDB` - MongoDB is a NoSQL document database used to store data collected from Reddit and YouTube websites [MongoDB Website]( https://www.mongodb.com/)
+* `PyMongo` - PyMongo is a Python distribution containing tool used to work with MongoDB using Python [PyMongo Website]
 ( https://pymongo.readthedocs.io/en/stable/)
 
 
@@ -39,7 +34,7 @@ Use requirements.txt file(Mentioned in how-to-run steps.)
 ## Two data-source documentation
 
 * `Reddit` - We are using `/cristianoronaldo`,`/messi`,`/SelenaGomez`,`/KylieJenner`,`/DwayneJohnson`,`/ArianaGrande`,`/KimKardashianPics`,`/Beyonce`,`/KhloeKardash`, `/KendallJenner` etc.
-* [https://www.reddit.com/api/v1/access_token]( https://www.reddit.com/dev/api/  ) - <this Reddit endpoint URL provide data for post related to all 10 celebrities.>
+* [https://www.reddit.com/api/v1/access_token]( https://www.reddit.com/dev/api/  ) - <this Reddit endpoint URL provides data for posts related to all 10 celebrities.>
 
 * `YouTube` -
 *"auth_uri": "https://accounts.google.com/o/oauth2/auth",
@@ -53,7 +48,7 @@ For Youtube, we also filter/ handle exceptions that are due to videos that have 
 
  {Also, a process is already running such that API fetch request will fetch every 1 hour and get the result in the Reddit and YouTube collections as discussed above.)
 
-To view the information of this process:- Go to VM and log in such that you are in user@CS515-25:- (user will be your username)
+To view the information of this process:- Go to VM and login such that you are in user@CS515-25:- (user will be your username)
 Run command: -  ps -ef | grep python3. 
 
 You will be able to see more details in the MongoDB collections which display individual posts and comments.
@@ -64,7 +59,6 @@ Go inside project-1-implementation-team-caffeine folder:-
 1)Using a virtual environment
 
 python3 -m venv venv
-
 
 2)Activate the virtual environment:
 
@@ -89,9 +83,9 @@ python3 main.py
 
 Please Note
 
-1: Reddit API calls take some time to fetch as compared to youtube.
+1: Reddit API calls take some time to fetch as compared to YouTube.
 
-2: r/politics subreddit added as per our discussion with professor. This is loaded in a separate collection named "politics_data" and for checking the count, we are using a collection called "store_count". 
+2: The r/politics subreddit was added as per our discussion with the professor. This is loaded in a separate collection named "politics_data" and for checking the count, we are using a collection called "store_count". 
 
 
 ## Database schema - NoSQL MongoDB
@@ -219,24 +213,24 @@ collection_2: Reddit_data structure sample:-
   ]
 }
 =======
-* `PyMongo` - PyMongo is Python distribution containing tool used to work with MongoDB using Python [PyMongo Website]( https://pymongo.readthedocs.io/en/stable/)
+* `PyMongo` - PyMongo is a Python distribution containing tool used to work with MongoDB using Python [PyMongo Website]( https://pymongo.readthedocs.io/en/stable/)
 
-* `MatPlotLib` - We are using this library to generate various plots that are requiered in this part of the project [MatPlotLib Website](https://matplotlib.org/)
+* `MatPlotLib` - We are using this library to generate various plots that are required in this part of the project [MatPlotLib Website](https://matplotlib.org/)
 
-* `Natural Language Processing` - We used speech intensity analyzer to analyze the comments and to check if they are positve, neutral or negative. [NLP Speech intensity analyzer](https://github.com/cjhutto/vaderSentiment)
+* `Natural Language Processing` - We used a speech intensity analyzer to analyze the comments and to check if they were positive, neutral, or negative. [NLP Speech intensity analyzer](https://github.com/cjhutto/vaderSentiment)
 >>>>>>> 95c68c29e4eb17fb53c9c14f97d8469f0b1152f8
 
 For Installation of different packages:-
 
 Use requirements.txt file(Mentioned in how-to-run steps.)
 
-In this part of the project we perform various analysis based on the data that was collected. Along with this, we also made use of Modern Hate Speech API for toxicity detection. 
+In this part of the project, we perform various analyses based on the collected data. Along with this, we also used Modern Hate Speech API for toxicity detection. 
 
 We performed four main types of analysis on celebrities and their overall impact:-
 1) Comparative
 2) Influence 
 3) Sentiment
-4) timeSeries/trends
+4) time-series/trends
 
  ## How to run the project?
 
@@ -282,37 +276,37 @@ pip install -r requirements.txt
     
     python3 sentiment.py
     
-    4) timeSeries/trends
+    4) time-series/trends
     
     python3 trends.py
 
-    For running plot that shows comparison between reddit and youtube in toxicity using --modern hate speech:-
+    For running a plot that shows comparison between Reddit and youtube in toxicity using --modern hate speech:-
     python3 mhs-plots.py
    
     --for generating politics comments binned hourly 
     python3 politics_comments.py
 
     **Note:
-    We are collecting data for politics subreddit from 3rd of November to 17th November instead of 1st November to 14th November, we had a word with professor during the lecture regarding the same and he approved it.
+    We are collecting data for the politics subreddit from the 3rd of November to the 17th of November instead of the 1st of November to the 14th of November, we had a word with the professor during the lecture regarding the same and he approved it.
 
 
-    All plots will be stored under plots directory. We have run each kind of plot once and stored it just in case. 
+    All plots will be stored under the plots directory. We have run each kind of plot once and stored it just in case. 
 
-    **NOTE: For  data that was to be collected between 1st and 14th. Due to vm problems there is no data on 5th and 6th and some inconsistencies that we had spoken to the professor in class. 
+    **NOTE: For  data that was to be collected between the 1st and 14th. Due to the VM problems, there is no data on the 5th and 6th, and some inconsistencies that we had spoken to the professor in class. 
 
-    Other than that we had run the project several times after the vm was restored for testing purposes and that's why you may see a spike on that date. Also, on 17th a spike is seen as after our first demo we were advised to do some changes in scheduling and we tested the same again. 
+    Other than that we had run the project several times after the VM was restored for testing purposes and that's why you may see a spike on that date. Also, on the 17th a spike was seen as after our first demo we were advised to make some changes in scheduling and we tested the same again. 
 
 
-In this part of the project we have developed an interactive tool including various analysis based on the data that was collected. All the HMTL files should be under templates folder
+In this part of the project, we have developed an interactive tool including various analyses based on the collected data. All the HMTL files should be under the templates folder
 
-The code structure :-
+## The code structure:-
 
-1-app.py- This file contains code which is based on the flask modules. By running this file, it activates routes to different analysis given below.
+1-app.py- This file contains code that is based on the Flask modules. Running this file activates routes to the different analyses given below.
 2-comparative.py- This file contains code which is based on the number of posts from Reddit and YouTube and here the comparison is made. 
-3-influence.py- This file contains code which connects to MongoDB and generate plots based on the likes, comments for various celebrities for Reddit and YouTube.
-4-sentiment.py- This file contains code which is using NLTK technique for NLP to find toxicity and influence of celebrities on people life's for generes such as music, entertainment and sports. 
-5- static folder contains images, plots and styles used in our website. 
-6- template contains html files for all the three analysis. 
+3-influence.py- This file contains code that connects to MongoDB and generates plots based on the likes and comments of various celebrities for Reddit and YouTube.
+4-sentiment.py- This file contains code that uses using NLTK technique for NLP to find toxicity and influence of celebrities on people's lives for genres such as music, entertainment, and sports. 
+5- The static folder contains images, plots, and styles used in our website. 
+6- The template contains html files for all three analyses. 
 
 We performed three main types of analysis on celebrities and their overall impact:-
 1) Comparative
@@ -347,13 +341,13 @@ pip install -r req.txt
 
 3) Run the different script 
 
-    1) For start of an interactive website or for waking up the server, use command
+    1) For the start of an interactive website or for waking up the server, use the command
 
     python3 app.py
 
     This will open a website on host and port http://127.0.0.1:5000/
 
-    Now for below analysis: 
+    Now for the below analysis: 
 
     1) Comparative
     
@@ -369,7 +363,7 @@ pip install -r req.txt
     http://127.0.0.1:5000/sentiment_analysis
 
 
-    For running all the plots that shows comparison between reddit and youtube :-
+    For running all the plots that show a comparison between Reddit and Youtube:-
 
     4) General Plots
 
@@ -378,5 +372,5 @@ pip install -r req.txt
 
     **Note:
     
-    In our MongoDB database, we have have collected data from 3rd November to 27th November for the toxicity and sentiment based data.All plots will be stored under static/plots directory. We have run each kind of plot once and stored it just in case. Also, the images that will be used in our website, are also stored under path static/images. 
+    In our MongoDB database, we have collected data from 3rd November to 27th November for the toxicity and sentiment-based data. All plots will be stored under the static/plots directory. We have run each kind of plot once and stored it just in case. Also, the images that will be used on our website, are stored under path static/images. 
 =======
