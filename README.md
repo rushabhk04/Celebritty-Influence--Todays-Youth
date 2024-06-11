@@ -1,7 +1,7 @@
 
 ## Project Abstract
 
-ToxiCrawler:- A web crawler to measure toxicity on Reddit and YouTube. 
+ToxiCrawler:- A web crawler to measure toxicity on Reddit and YouTube. Its front-end (HTML) code is given under path templates and CSS is under static/styles. For .py files, go to path ToxiCrawler/templates and under the root ToxiCrawler. For results, that is output plots, please go through the path ToxiCrawler/static/plots.
 
 In the digital age, understanding celebrity influence on today's generation is crucial. This project explores this phenomenon using the YouTube Data API and Reddit to collect and analyze data for meaningful insights. The objective is to collect real-time data and analyze and derive meaningful insights from the celebrity-based data, their online presence, and their impact on today’s generation. This entails scrutinizing the nature of discussions surrounding celebrities, discerning whether they predominantly manifest in a positive or negative light. By navigating the intricate interplay between celebrities and their admirers, we aim to shed light on the profound ways in which these figures shape beliefs, behaviors, and preferences within today's digital age. 
 
@@ -58,6 +58,8 @@ You will be able to see more details in the MongoDB collections which display in
 
  ## How to run the project?
 
+ (Please check the front-end design CSS stored at path:- static/styles)
+
 Go inside project-1-implementation-team-caffeine folder:-
 1)Using a virtual environment
 
@@ -89,6 +91,8 @@ Please Note
 1: Reddit API calls take some time to fetch as compared to YouTube.
 
 2: The r/politics subreddit was added as per our discussion with the professor. This is loaded in a separate collection named "politics_data" and for checking the count, we are using a collection called "store_count". 
+
+![image](https://github.com/rushabhk04/ToxiCrawler/assets/77202623/847a1df7-0348-4216-a24a-7e6f7affa49f)
 
 
 ## Database schema - NoSQL MongoDB
@@ -232,9 +236,22 @@ In this part of the project, we perform various analyses based on the collected 
 
 We performed four main types of analysis on celebrities and their overall impact:-
 1) Comparative
-2) Influence 
-3) Sentiment
-4) time-series/trends
+
+![image](https://github.com/rushabhk04/ToxiCrawler/assets/77202623/8ab31c87-3465-4040-a2c3-742e85595232)
+
+3) Influence
+
+![image](https://github.com/rushabhk04/ToxiCrawler/assets/77202623/597902fd-8601-4e0b-9e34-e48d44d50a70)
+
+
+5) Sentiment
+
+![image](https://github.com/rushabhk04/ToxiCrawler/assets/77202623/4176f5a1-f54a-4d07-9dbc-78ed1bd978ae)
+
+7) time-series/trends
+
+![image](https://github.com/rushabhk04/ToxiCrawler/assets/77202623/cb82a3a7-93a3-47d7-a095-5fa5e8c9141f)
+
 
  ## How to run the project?
 
@@ -378,8 +395,4 @@ pip install -r req.txt
     
     In our MongoDB database, we have collected data from 3rd November to 27th November for the toxicity and sentiment-based data. All plots will be stored under the static/plots directory. We have run each kind of plot once and stored it just in case. Also, the images that will be used on our website, are stored under path static/images. 
 =======
-
-Results :-
-
-![image](https://github.com/rushabhk04/ToxiCrawler/assets/77202623/3b4df9b8-9f38-4a5a-825e-130561c38276)
 
