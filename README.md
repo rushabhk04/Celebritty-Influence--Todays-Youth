@@ -1,7 +1,10 @@
 
 ## Project Abstract
 
+ToxiCrawler:- A web crawler to measure toxicity on Reddit and YouTube. 
+
 In the digital age, understanding celebrity influence on today's generation is crucial. This project explores this phenomenon using the YouTube Data API and Reddit to collect and analyze data for meaningful insights. The objective is to collect real-time data and analyze and derive meaningful insights from the celebrity-based data, their online presence, and their impact on today’s generation. This entails scrutinizing the nature of discussions surrounding celebrities, discerning whether they predominantly manifest in a positive or negative light. By navigating the intricate interplay between celebrities and their admirers, we aim to shed light on the profound ways in which these figures shape beliefs, behaviors, and preferences within today's digital age. 
+
 
 ## Project Implementation:-
 
@@ -9,12 +12,12 @@ In the digital age, understanding celebrity influence on today's generation is c
 In the digital era, the impact of celebrities on the younger generation is increasingly mediated through social media platforms. This study aims to quantitatively and qualitatively analyze the extent and nature of this influence. Utilizing the APIs of two major social media platforms, YouTube and Reddit, we systematically gather a substantial dataset, which is then meticulously stored in a MongoDB database for robust analysis. Our methodology encompasses a multi-faceted analytical approach, including an Influence Matrix, Trends Analysis, Content Analysis, and Sentiment Analysis, to provide a comprehensive understanding of celebrity impact.
 
 ## Team
-Bhavit Yogesh Shah bshah5@binghamton.edu
+
 Rushabh Kothari rkothar1@binghamton.edu
+Bhavit Yogesh Shah bshah5@binghamton.edu
 Shruti Iyengar siyenga1@binghamton.edu
 Mukul Dev mchhang1@binghamton.edu
 
-=======
 ## Tech-stack
 
 * `Python` - The project is developed and tested using Python v3.8. [Python Website](https://www.python.org/)
@@ -90,6 +93,7 @@ Please Note
 
 ## Database schema - NoSQL MongoDB
 
+## More than 100,000 records were taken from Reddit and YouTube from various channels over 1 month to carry out the analysis.
 
 collection_1: YouTube_data structure sample:-
 {
@@ -374,3 +378,8 @@ pip install -r req.txt
     
     In our MongoDB database, we have collected data from 3rd November to 27th November for the toxicity and sentiment-based data. All plots will be stored under the static/plots directory. We have run each kind of plot once and stored it just in case. Also, the images that will be used on our website, are stored under path static/images. 
 =======
+
+Results :-
+
+![image](https://github.com/rushabhk04/ToxiCrawler/assets/77202623/3b4df9b8-9f38-4a5a-825e-130561c38276)
+
