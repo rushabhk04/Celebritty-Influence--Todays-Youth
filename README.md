@@ -19,13 +19,32 @@ Mukul Dev mchhang1@binghamton.edu
 ## Tech-stack
 
 * `Python` - The project is developed and tested using Python v3.8. [Python Website](https://www.python.org/)
-* `request` - Request is a popular HTTP networking module(aka library) for python programming language. [Request Website](https://docs.python-requests.org/en/latest/#)
-* `datetime` - The DateTime library used for manipulating dates and times [Python documentation Website]( https://docs.python.org/3/library/datetime.html)
-* `Json` - Json is a Python build package used to work on JSON data got from different API get requests [Python documentation Website](https://docs.python.org/3/library/datetime.html)
-* `base64` - base64 is a Python library used for data encoding [Python documentation Website](https://docs.python.org/3/library/datetime.html)
-* `MongoDB` - MongoDB is a NoSQL document database used to store data collected from Reddit and YouTube websites [MongoDB Website]( https://www.mongodb.com/)
-* `PyMongo` - PyMongo is a Python distribution containing tool used to work with MongoDB using Python [PyMongo Website]
-( https://pymongo.readthedocs.io/en/stable/)
+* `Flask` - A lightweight WSGI web application framework in Python. [Flask Website](https://flask.palletsprojects.com/)
+* `request` - Request is a popular HTTP networking module (aka library) for Python programming language. [Request Website](https://docs.python-requests.org/en/latest/#)
+* `datetime` - The DateTime library used for manipulating dates and times. [Python documentation Website](https://docs.python.org/3/library/datetime.html)
+* `pytz` - A library for accurate and cross-platform timezone calculations. [pytz Documentation](https://pythonhosted.org/pytz/)
+* `dateutil` - A powerful extension to the standard datetime module. [dateutil Documentation](https://dateutil.readthedocs.io/en/stable/)
+* `Json` - Json is a Python built-in package used to work on JSON data from different APIs to get requests. [Python documentation Website](https://docs.python.org/3/library/json.html)
+* `base64` - Base64 is a Python library used for data encoding. [Python documentation Website](https://docs.python.org/3/library/base64.html)
+* `MongoDB` - MongoDB is a NoSQL document database used to store data collected from Reddit and YouTube websites. [MongoDB Website](https://www.mongodb.com/)
+* `PyMongo` - PyMongo is a Python distribution containing tools used to work with MongoDB using Python. [PyMongo Website](https://pymongo.readthedocs.io/en/stable/)
+* `Matplotlib` - A comprehensive library for creating static, animated, and interactive visualizations in Python. [Matplotlib Website](https://matplotlib.org/)
+* `numpy` - A fundamental package for scientific computing with Python. [numpy Website](https://numpy.org/)
+* `NLTK` - A leading platform for building Python programs to work with human language data (natural language processing). [NLTK Website](https://www.nltk.org/)
+* `logging` - A logging facility for Python, part of the standard library. [Python documentation Website](https://docs.python.org/3/library/logging.html)
+* `os` - A module in Python that provides a way of using operating system-dependent functionality. [Python documentation Website](https://docs.python.org/3/library/os.html)
+* `time` - A module that provides various time-related functions. [Python documentation Website](https://docs.python.org/3/library/time.html)
+* `google.oauth2` - Google OAuth2 for authentication and authorization in Python applications. [Google OAuth2 Documentation](https://google-auth.readthedocs.io/en/latest/)
+* `googleapiclient` - A client library for accessing Google APIs. [Google API Client Library Documentation](https://developers.google.com/api-client-library/python)
+* `dbm` - A module for simple databases in Python. [Python documentation Website](https://docs.python.org/3/library/dbm.html)
+
+* `Custom Modules`:
+  * `comparative` - Module developed for generating comparative plots.
+  * `sentiment` - Module for plotting toxicity analysis.
+  * `influence` - Module for plotting influence metrics.
+  * `Reddit` - Custom module for fetching data from Reddit.
+  * `YouTube` - Custom module for fetching data from YouTube.
+
 
 
 For Installation of different packages:-
